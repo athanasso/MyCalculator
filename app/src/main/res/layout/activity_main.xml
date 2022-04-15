@@ -68,7 +68,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
         <Button
             style="@style/buttonOperator"
-            android:text="/"/>
+            android:text="÷"/>
 
 
     </LinearLayout>
@@ -88,7 +88,7 @@
             android:text="9"/>
         <Button
             style="@style/buttonOperator"
-            android:text="X"/>
+            android:text="×"/>
 
 
     </LinearLayout>

@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun timesDivisionCalculate(passedList: MutableList<Any>): MutableList<Any> {
         var list = passedList
-        while (list.contains('x') || list.contains('/')) {
+        while (list.contains('×') || list.contains('÷')) {
             list = calcTimesDiv(list)
         }
         return list
@@ -103,12 +103,12 @@ class MainActivity : AppCompatActivity() {
                 val prevDigit = passedList[i - 1] as Float
                 val nextDigit = passedList[i + 1] as Float
                 when(operator) {
-                    'x' ->
+                    '×' ->
                     {
                         newList.add(prevDigit * nextDigit)
                         restartIndex = i + 1
                     }
-                    '/' ->
+                    '÷' ->
                     {
                         newList.add(prevDigit / nextDigit)
                         restartIndex = i + 1
